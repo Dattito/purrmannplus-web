@@ -2,7 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
-After pulling from GitHub, don't forget to `npm install`!
+1. After pulling from GitHub, don't forget to `npm install`
+2. Environment Variables are needed to be set
+3. In the assets folder, create a `env.js` file with the command `envsubset < env.template.js > env.js`
 
 ## Development server
 
