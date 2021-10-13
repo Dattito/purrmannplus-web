@@ -30,7 +30,14 @@ export class LoginComponent implements OnInit {
     if (this.loginForm.invalid) return;
 
     this.loading = true;
-
   }
 
+  /* phoneNumber(control: FormControl): { [s: string]: boolean } | null {
+    if (control.value.length < 10) {
+      return {
+        phoneNumber: true
+      };
+    }
+    return null;
+  } */
 }
