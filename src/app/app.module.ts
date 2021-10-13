@@ -7,22 +7,22 @@ import { AppComponent } from './app.component';
 import { IndexSiteComponent } from './core/pages/index-site/index-site.component';
 import { NotFoundSiteComponent } from './core/pages/not-found-site/not-found-site.component';
 import { NavbarComponent } from './core/components/navbar/navbar.component';
-import { NgbCollapseModule, NgbDropdownModule, NgbModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { Constants } from './config/constants';
 import { ApiEndpointsService } from './api-endpoints.service';
 import { PurrmannplusBackendService } from './purrmannplus-backend.service';
+import { AlertComponent } from './core/components/alert/alert.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexSiteComponent,
     NotFoundSiteComponent,
-    NavbarComponent
+    NavbarComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
     HttpClientModule
   ],
   providers: [
