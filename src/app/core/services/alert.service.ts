@@ -4,10 +4,10 @@ import { filter } from 'rxjs/operators';
 import { Alert, AlertType } from '../models/alert.model';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class AlertService {
-  private subject = new Subject<Alert>();
+    private subject = new Subject<Alert>();
     private defaultId = 'default-alert';
 
     // enable subscribing to alerts observable

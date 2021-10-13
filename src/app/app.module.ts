@@ -7,8 +7,6 @@ import { AppComponent } from './app.component';
 import { IndexSiteComponent } from './core/pages/index-site/index-site.component';
 import { NotFoundSiteComponent } from './core/pages/not-found-site/not-found-site.component';
 import { NavbarComponent } from './core/components/navbar/navbar.component';
-import { Constants } from './config/constants';
-import { ApiEndpointsService } from './api-endpoints.service';
 import { PurrmannplusBackendService } from './purrmannplus-backend.service';
 import { AlertComponent } from './core/components/alert/alert.component';
 
@@ -26,8 +24,6 @@ import { AlertComponent } from './core/components/alert/alert.component';
     HttpClientModule
   ],
   providers: [
-    Constants,
-    ApiEndpointsService,
     PurrmannplusBackendService
   ],
   bootstrap: [AppComponent]

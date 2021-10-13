@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../../services/config.service';
 
 @Component({
   selector: 'app-index-site',
@@ -6,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index-site.component.scss']
 })
 export class IndexSiteComponent implements OnInit {
-
-  constructor() { }
 
   ngOnInit(): void {
   }
