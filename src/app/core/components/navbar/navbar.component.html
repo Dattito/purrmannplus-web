@@ -12,7 +12,8 @@
       </ul>
       
       <div class="d-grid gap-2 d-md-block">
-        <button class="btn btn-outline-dark" type="submit" routerLink="/auth/login">Anmelden / Registrieren</button>
+        <button class="btn btn-outline-dark" type="submit" routerLink="/auth/login" *ngIf="isLoggedIn"> Anmelden / Registrieren</button>
+        <button class="btn btn-outline-danger" type="submit" (click) ="onLogout()" *ngIf="!isLoggedIn"> Abmelden </button>
       </div>
     </div>
   </div>

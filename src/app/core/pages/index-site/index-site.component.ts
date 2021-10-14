@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../services/auth.service';
 import { ConfigService } from '../../services/config.service';
 
 @Component({
@@ -8,7 +9,13 @@ import { ConfigService } from '../../services/config.service';
 })
 export class IndexSiteComponent implements OnInit {
 
+  constructor(private auth: AuthService) {
+  }
+
   ngOnInit(): void {
   }
 
+  onCheckLogin() {
+    this.auth.checkIsLoggedIn();
+  }
 }
