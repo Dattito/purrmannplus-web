@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
-import { ConfigService } from '../../services/config.service';
-
 @Component({
   selector: 'app-index-site',
   templateUrl: './index-site.component.html',
